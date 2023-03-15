@@ -1,11 +1,10 @@
-const conteur = 0;
-const btn1 = document.querySelector("button");
-const click = document.querySelector(".compteur");
-compteur.innerHTML = compteur.addEventListener("click", function (event) {
-  click.innerHTML = "conteur+ cookies";
-});
+const alien = document.querySelector("#alien");
+let nombreClics = 0;
 
-Button.addEventListener("click", function () {
-  conteur++;
-  conteur.innerHTML = `${conteur} cookie`;
-});
+function clic(nombreClics) {
+  nombreClics++;
+}
+
+alien.onclick = function (nombreClics) {
+  nombreClics.innerHTML = compteur++;
+};

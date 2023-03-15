@@ -4,7 +4,29 @@
   padding: 0;
   margin: 0;
 }
+#page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
 
+#container {
+  display: flex;
+  border: 2px solid rgb(147, 60, 60);
+}
+#container1 {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid rgb(181, 155, 22);
+}
+.boutique {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid rgb(107, 34, 150);
+}
+
+#footer {
+}
 #alien {
   display: flex;
   justify-self: center;

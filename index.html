@@ -9,37 +9,53 @@
   </head>
 
   <body>
-    <nav class="nav1">
-      <ul>
-        <li><!-- logo twitter --></li>
-        <li><!-- logo point d'interrogation --></li>
-      </ul>
-    </nav>
-    <div class="titre">
-      <span>ALIEN CLICKER</span>
-    </div>
-    <div class="logo">
-      <img
-        id="alien"
-        src="./assets/soucoupe.png"
-        alt="Alien capsule with happy little alien"
-      />
-    </div>
-    <div class="clickParSecond"></div>
+    <div id="page">
+      <div id="header">
+        <nav class="nav1">
+          <ul>
+            <li>logo twitter</li>
+            <li>logo point d'interrogation</li>
+          </ul>
+        </nav>
+      </div>
+      <div id="container">
+        <div id="container1">
+          <div class="titre">
+            <span>ALIEN CLICKER</span>
+          </div>
 
-    <nav class="boutique">
-      <div class="box1">
-        <!-- +1 clique par click ++ -->
+          <div class="logo">
+            <img
+              onclick="clic"
+              id="alien"
+              src="./assets/soucoupe.png"
+              alt="Alien capsule with happy little alien"
+            />
+          </div>
+          <div><span id="nombreClics">0</span> aliens</div>
+          <div class="clickParSecond">1444677</div>
+        </div>
+        <div class="boutique">
+          Boutique
+
+          <div class="box1">
+            <div class="name">+1 clic / click</div>
+            <div class="price">Price needed: 20c</div>
+          </div>
+
+          <div class="box2">
+            <div class="name">+1 clic / second</div>
+            <div class="price">Price needed: 30c</div>
+          </div>
+          <div class="box3">
+            <div class="name">New cursor</div>
+            <div class="price">price needed: 50c</div>
+          </div>
+        </div>
       </div>
-      <div class="box2"></div>
-      <!-- click par second ++ -->
-      <div class="box3">
-        <!-- debloque "curseur" donne x%/min -->
+      <div id="footer">
+        <footer>signature</footer>
       </div>
-      <div class="box4">
-        <!-- +10 clique /clique -->
-      </div>
-    </nav>
-    <footer>signature</footer>
+    </div>
   </body>
 </html>
