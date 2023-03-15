@@ -1,0 +1,14 @@
+* {
+  background: url(./assets/5445590.jpg) fixed;
+  background-size: cover;
+  padding: 0;
+  margin: 0;
+}
+
+#alien {
+  display: flex;
+  justify-self: center;
+  margin: auto;
+  height: 300px;
+  width: auto;
+}
