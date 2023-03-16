@@ -64,10 +64,11 @@ button {
 
 dialog {
   width: 80%;
-  height: 80%;
+  height: 70%;
   position: absolute;
   top: 30px;
   border-radius: 3rem;
+  margin-left: 10%;
   background-image: url("assets/backpop.jpg");
   background-size: cover;
 }
