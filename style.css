@@ -84,6 +84,13 @@ p {
   color: greenyellow;
 }
 
+span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 #page {
   display: flex;
   flex-direction: column;
@@ -92,6 +99,7 @@ p {
 
 #container {
   display: flex;
+  flex-direction: column;
   border: 2px solid rgb(147, 60, 60);
 }
 
@@ -101,9 +109,31 @@ p {
   border: 2px solid rgb(181, 155, 22);
 }
 
+.titre {
+
+  font-family: "Space Age";
+  text-align: center;
+  font-size: 50px;
+  height: 70px;
+  padding-bottom: 15px;
+  color: greenyellow;
+  font-weight: bolder;
+  text-shadow:
+    0 0 6px rgba(202, 228, 225, 0.92),
+    0 0 30px rgba(202, 228, 225, 0.34),
+    0 0 12px rgba(30, 132, 242, 0.52),
+    0 0 21px rgba(30, 132, 242, 0.92),
+    0 0 34px rgba(30, 132, 242, 0.78),
+    0 0 54px rgba(30, 132, 242, 0.92);
+}
+
+.logo {
+  padding-top: 25px;
+}
+
 .boutique {
   display: flex;
-  flex-direction: column;
+
   border: 2px solid rgb(107, 34, 150);
 }
 
