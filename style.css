@@ -1,36 +1,59 @@
+@font-face {
+  font-family: 'space';
+  src:  url('SpaceAge.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 * {
+  display: 0;
   background: url(./assets/5445590.jpg) fixed;
   background-size: cover;
   padding: 0;
   margin: 0;
 }
-#page {
-  display: flex;
-  flex-direction: column;
+body{
+  background: url(./assets/fond.jpg) no-repeat center 100%/cover;
   height: 100vh;
+  overflow: hidden;
 }
 
-#container {
-  display: flex;
-  border: 2px solid rgb(147, 60, 60);
-}
-#container1 {
-  display: flex;
-  flex-direction: column;
-  border: 2px solid rgb(181, 155, 22);
-}
-.boutique {
-  display: flex;
-  flex-direction: column;
-  border: 2px solid rgb(107, 34, 150);
+h1 {
+  text-align: center;
+  font-family: space;
+  margin: 30px;
+
 }
 
-#footer {
-}
 #alien {
   display: flex;
   justify-self: center;
   margin: auto;
   height: 300px;
-  width: auto;
+  width: auto; 
 }
+
+#footer {
+  background-color: black;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+.prenom {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  width: 100%;
+}
+
+.wild {
+  margin-left: 10px;
+}
+
+.anthony {
+  margin-right: 10px;
+}
+

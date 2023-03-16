@@ -8,3 +8,4 @@ function clic(nombreClics) {
 alien.onclick = function (nombreClics) {
   nombreClics.innerHTML = compteur++;
 };
+
