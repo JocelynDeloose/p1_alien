@@ -8,3 +8,26 @@ function clic(nombreClics) {
 alien.onclick = function (nombreClics) {
   nombreClics.innerHTML = compteur++;
 };
+
+const buttonToclick = document.querySelector('#openBtn');
+
+buttonToclick.addEventListener('click', function () {
+  console.log('gcoucoucocucocu')
+})
+
+const dialog =
+  document.getElementById('dialog');
+const openBtn =
+  document.getElementById('openBtn');
+const closeBtn =
+  document.getElementById('closeBtn');
+
+openBtn.addEventListener('click',
+  function () {
+    dialog.setAttribute('open', true);
+  })
+
+closeBtn.addEventListener('click',
+  function () {
+    dialog.removeAttribute('open')
+  });
