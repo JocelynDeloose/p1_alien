@@ -1,3 +1,5 @@
+@media screen and (min-width: 900px){
+}
 @font-face {
   font-family: 'space';
   src:  url('SpaceAge.ttf') format('truetype');
@@ -19,18 +21,82 @@ body{
   overflow: hidden;
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8%;
+
+}
+
+button {
+  display: flex;
+  height: 45px;
+  width: 45px;
+  border-radius: 3rem;
+  font-size: 200%;
+  align-items: center;
+
+}
+
+
+
+#openBtn {
+  justify-content: center;
+  color: red;
+  font-weight: bolder;
+  background-image: url("assets/earth.avif");
+  background-size: cover;
+}
+
+#closeBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid;
+  background-image: url("assets/mars.avif");
+  background-size: cover;
+}
+
+dialog {
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  top: 30px;
+  border-radius: 3rem;
+  background-image: url("assets/background.jpg");
+  background-size: cover;
+}
+
+h2 {
+  font-weight: bolder;
+  font-family: 'Space Age';
+}
+
+p {
+  font-family: 'Space Age';
+}
+
 h1 {
+  color: greenyellow;
   text-align: center;
   font-family: space;
   margin: 30px;
-
+  font-size: 100px;
+  text-shadow:
+    0 0 6px rgba(202, 228, 225, 0.92),
+    0 0 30px rgba(202, 228, 225, 0.34),
+    0 0 12px rgba(30, 132, 242, 0.52),
+    0 0 21px rgba(30, 132, 242, 0.92),
+    0 0 34px rgba(30, 132, 242, 0.78),
+    0 0 54px rgba(30, 132, 242, 0.92);
 }
 
 #alien {
   display: flex;
   justify-self: center;
   margin: auto;
-  height: 300px;
+  height: 400px;
   width: auto; 
 }
 
