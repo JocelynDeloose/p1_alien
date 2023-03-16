@@ -70,11 +70,13 @@ dialog {
 
 h2 {
   font-weight: bolder;
-  font-family: 'Space Age';
+  font-family: 'space';
+  color: greenyellow;
 }
 
 p {
-  font-family: 'Space Age';
+  font-family: 'space';
+  color: greenyellow;
 }
 
 h1 {
