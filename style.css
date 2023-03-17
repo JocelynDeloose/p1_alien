@@ -21,51 +21,71 @@ body{
   overflow: hidden;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 8%;
-
-}
-
 button {
-  display: flex;
   height: 45px;
   width: 45px;
   border-radius: 3rem;
-  font-size: 200%;
+  font-size: 250%;
   align-items: center;
-
 }
+
+button:hover{
+  cursor: pointer;
+}
+
 
 
 
 #openBtn {
-  justify-content: center;
+
   color: red;
   font-weight: bolder;
-  background-image: url("assets/earth.avif");
+  background: url("assets/earth.avif");
   background-size: cover;
+  position: fixed;
+  margin-top: 170px;
+  margin-left: 20px;
+  
 }
 
 #closeBtn {
   display: flex;
-  justify-content: center;
-  align-items: center;
   border: solid;
-  background-image: url("assets/mars.avif");
+  background: url("assets/mars.avif");
   background-size: cover;
+  margin-left: 250px;
+  
+  
 }
 
 dialog {
-  width: 80%;
-  height: 80%;
+  width: 20%;
+  height: 50%;
   position: absolute;
   top: 30px;
-  border-radius: 3rem;
-  background-image: url("assets/background.jpg");
+  border-radius: 70px;
+  background: url("assets/background.jpg");
+  margin-left: 100px;
+  margin-top: 250px;
+  font-size: 20px;
+  padding: 15px;
+  text-shadow:
+  0 0 6px rgba(202, 228, 225, 0.92),
+  0 0 30px rgba(202, 228, 225, 0.34),
+  0 0 12px rgba(30, 132, 242, 0.52),
+  0 0 21px rgba(30, 132, 242, 0.92),
+  0 0 34px rgba(30, 132, 242, 0.78),
+  0 0 54px rgba(30, 132, 242, 0.92);
+  
+}
+
+.button2{
+  background: url("assets/wild.png");
   background-size: cover;
+  margin-left: 20px;
+  margin-top: 110px;
+
+
 }
 
 h2 {
@@ -83,7 +103,6 @@ h1 {
   color: greenyellow;
   text-align: center;
   font-family: space;
-  margin: 30px;
   font-size: 100px;
   text-shadow:
     0 0 6px rgba(202, 228, 225, 0.92),
