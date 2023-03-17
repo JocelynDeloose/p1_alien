@@ -12,6 +12,7 @@
 }
 
 
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -51,6 +52,13 @@ button {
   font-weight: bolder;
   background-image: url("assets/earth.avif");
   background-size: cover;
+  box-shadow:
+    0 0 6px rgba(202, 228, 225, 0.92),
+    0 0 30px rgba(202, 228, 225, 0.34),
+    0 0 12px rgba(108, 242, 30, 0.52),
+    0 0 21px rgba(48, 242, 30, 0.92),
+    0 0 34px rgba(30, 242, 111, 0.78),
+    0 0 54px rgba(30, 242, 178, 0.92);
 }
 
 #closeBtn {
@@ -60,6 +68,13 @@ button {
   border: solid;
   background-image: url("assets/mars.avif");
   background-size: cover;
+  box-shadow:
+    0 0 6px rgba(202, 228, 225, 0.92),
+    0 0 30px rgba(202, 228, 225, 0.34),
+    0 0 12px rgba(108, 242, 30, 0.52),
+    0 0 21px rgba(48, 242, 30, 0.92),
+    0 0 34px rgba(30, 242, 111, 0.78),
+    0 0 54px rgba(30, 242, 178, 0.92);
 }
 
 dialog {
@@ -71,6 +86,12 @@ dialog {
   margin-left: 10%;
   background-image: url("assets/backpop.jpg");
   background-size: cover;
+  box-shadow: 0 0 6px rgba(202, 228, 225, 0.92),
+    0 0 30px rgba(202, 228, 225, 0.34),
+    0 0 12px rgba(108, 242, 30, 0.52),
+    0 0 21px rgba(48, 242, 30, 0.92),
+    0 0 34px rgba(30, 242, 111, 0.78),
+    0 0 54px rgba(30, 242, 178, 0.92);
 }
 
 h2 {
@@ -100,13 +121,13 @@ span {
 #container {
   display: flex;
   flex-direction: column;
-  border: 2px solid rgb(147, 60, 60);
+
 }
 
 #container1 {
   display: flex;
   flex-direction: column;
-  border: 2px solid rgb(181, 155, 22);
+
 }
 
 .titre {
@@ -121,33 +142,105 @@ span {
   text-shadow:
     0 0 6px rgba(202, 228, 225, 0.92),
     0 0 30px rgba(202, 228, 225, 0.34),
-    0 0 12px rgba(30, 132, 242, 0.52),
-    0 0 21px rgba(30, 132, 242, 0.92),
-    0 0 34px rgba(30, 132, 242, 0.78),
-    0 0 54px rgba(30, 132, 242, 0.92);
+    0 0 12px rgba(108, 242, 30, 0.52),
+    0 0 21px rgba(48, 242, 30, 0.92),
+    0 0 34px rgba(30, 242, 111, 0.78),
+    0 0 54px rgba(30, 242, 178, 0.92);
 }
 
 .logo {
   padding-top: 25px;
 }
 
-.boutique {
+#nombreClics {
   display: flex;
+  justify-self: center;
+  align-items: center;
+  border: white;
+  height: 45px;
+  border-radius: 3rem;
+  margin-left: 50px;
+  margin-right: 50px;
+  color: yellowgreen;
+  font-weight: bolder;
 
-  border: 2px solid rgb(107, 34, 150);
+  text-shadow:
+    0 0 6px rgba(202, 228, 225, 0.92),
+    0 0 30px rgba(202, 228, 225, 0.34),
+    0 0 12px rgba(108, 242, 30, 0.52),
+    0 0 21px rgba(48, 242, 30, 0.92),
+    0 0 34px rgba(30, 242, 111, 0.78),
+    0 0 54px rgba(30, 242, 178, 0.92);
+  box-shadow:
+    0 0 6px rgba(202, 228, 225, 0.92),
+    0 0 30px rgba(202, 228, 225, 0.34),
+    0 0 12px rgba(242, 30, 231, 0.52),
+    0 0 21px rgba(224, 30, 242, 0.92),
+    0 0 34px rgba(242, 30, 207, 0.78),
+    0 0 54px rgba(242, 30, 147, 0.92);
+
 }
 
+
+
+.boutique {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 150px;
+
+}
+
+.box1 {
+
+  display: flex;
+  align-items: center;
+  border-radius: 1.5rem;
+  width: 33%;
+
+}
+
+.box2 {
+
+  display: flex;
+  align-items: center;
+  border-radius: 1.5rem;
+  width: 33%;
+}
+
+.box3 {
+
+  display: flex;
+  align-items: center;
+  border-radius: 1.5rem;
+  width: 33%;
+}
+
+
+
 #footer {
+  display: flex;
+  align-items: center;
   background-color: black;
-  position: absolute;
+  position: fixed;
+  height: 30px;
   width: 100%;
   bottom: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.8rem;
 }
 
 .prenom {
   color: white;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
   list-style-type: none;
   width: 100%;
 }
