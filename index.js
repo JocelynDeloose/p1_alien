@@ -1,19 +1,4 @@
-const alien = document.querySelector("#alien");
-let nombreClics = 0;
 
-function clic(nombreClics) {
-  nombreClics++;
-}
-
-alien.onclick = function (nombreClics) {
-  nombreClics.innerHTML = compteur++;
-};
-
-const buttonToclick = document.querySelector('#openBtn');
-
-buttonToclick.addEventListener('click', function () {
-  console.log('gcoucoucocucocu')
-})
 
 const dialog =
   document.getElementById('dialog');
@@ -31,3 +16,4 @@ closeBtn.addEventListener('click',
   function () {
     dialog.removeAttribute('open')
   });
+
