@@ -8,28 +8,37 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="preload" href="SpaceAge.ttf" as="font" type="font/woff2" crossorigin>
   </head>
-<!-- titre -->
-  <body>
-    <header>
-      <div id="titre">
-        <h1>ALIEN CLICKER</h1>
-      </div>
-    </header>
-    <!-- container -->
-      <div id="container">
-        <div id="container1">
-          
 
-          <div class="logo">
-            <img
-              onclick="clic"
-              id="alien"
-              src="./assets/soucoupe.png"
-              alt="Alien capsule with happy little alien"
-            />
-          </div>
-          
-    <!-- Icones -->
+  <body>
+    <!-- header/titre -->
+    <header>
+        <div id="titre">ALIEN CLICKER</div>
+    </header>
+    <!-- side bar -->
+    <div id="mySidepanel" class="sidepanel">
+
+      <a href="javascript:void(0)" class="closenav" onclick="closeNav()"
+        >&times;</a
+      >
+      <div class="achat">
+        <div class="name">+1 clic / click</div>
+        <div class="price">Price needed: 20c</div>
+      </div>
+
+      <div class="achat">
+        <div class="name">+1 clic / second</div>
+        <div class="price">Price needed: 30c</div>
+      </div>
+      
+      <div class="achat">
+        <div class="name">New cursor</div>
+        <div class="price">price needed: 50c</div>
+      </div>
+    </div>
+    <img id="fleche" src="assets/fleche.png" class="opennav" onclick="openNav()"></img> 
+    <!-- img alien -->
+   <img onclick="clic" id="alien" src="./assets/soucoupe.png" alt="Alien capsule with happy little alien"> </img>
+    <!-- Icones btn -->
     <div id="page">
         <button id="openBtn">
           ?
