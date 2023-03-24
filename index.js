@@ -33,6 +33,18 @@ function increment() {
   } else if (doubleClick === 4) {
     clicks = clicks + 6;
     nombreClics.innerHTML = clicks + " " + "aliens";
+  } else if (doubleClick === 5) {
+    clicks = clicks + 7;
+    nombreClics.innerHTML = clicks + " " + "aliens";
+  } else if (doubleClick === 6) {
+    clicks = clicks + 8;
+    nombreClics.innerHTML = clicks + " " + "aliens";
+  } else if (doubleClick === 7) {
+    clicks = clicks + 9;
+    nombreClics.innerHTML = clicks + " " + "aliens";
+  } else if (doubleClick === 8) {
+    clicks = clicks + 10;
+    nombreClics.innerHTML = clicks + " " + "aliens";
   }
 }
 /* boutique x2 click */
@@ -102,4 +114,12 @@ previous.addEventListener('click', previousSlide)
 
 
 
+const switchImg = document.getElementById('alien');
+const newTitle = document.getElementById('title');
+switchImg.addEventListener('click', function () {
+  switchImg.src = "assets/surprise.jpeg";
+  switchImg.alt = "florine";
+})
+function surprise() {
 
+}
