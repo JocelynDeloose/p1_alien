@@ -110,16 +110,3 @@ function previousSlide() {
 }
 previous.addEventListener('click', previousSlide)
 
-
-
-
-
-const switchImg = document.getElementById('alien');
-const newTitle = document.getElementById('title');
-switchImg.addEventListener('click', function () {
-  switchImg.src = "assets/surprise.jpeg";
-  switchImg.alt = "florine";
-})
-function surprise() {
-
-}
