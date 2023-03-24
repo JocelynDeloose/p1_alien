@@ -1,5 +1,3 @@
-
-
 const dialog =
   document.getElementById('dialog');
 const openBtn =
@@ -20,14 +18,47 @@ closeBtn.addEventListener('click',
 
 let clicks = 0;
 function increment() {
-  clicks = clicks + 1;
-  nombreClics.innerHTML = clicks + " " + "aliens";
+  if (doubleClick === 0) {
+    clicks = clicks + 1;
+    nombreClics.innerHTML = clicks + " " + "aliens";
+  } else if (doubleClick === 1) {
+    clicks = clicks + 2;
+    nombreClics.innerHTML = clicks + " " + "aliens";
+  } else if (doubleClick === 2) {
+    clicks = clicks + 4;
+    nombreClics.innerHTML = clicks + " " + "aliens";
+  } else if (doubleClick === 3) {
+    clicks = clicks + 5;
+    nombreClics.innerHTML = clicks + " " + "aliens";
+  } else if (doubleClick === 4) {
+    clicks = clicks + 6;
+    nombreClics.innerHTML = clicks + " " + "aliens";
+  }
 }
-
-/*  boutique x2 click
+/* boutique x2 click */
 let doubleClick = 0;
 function incrementDoubleClic() {
-  doubleClick = clicks++;} */
+  doubleClick = doubleClick + 1;
+}
+
+//1. Creer une variable
+// 2. add event listener definie si il est vrai ou faux
+//3. if ( variable===true){function increment() {
+//clicks = clicks + 2;
+//nombreClics.innerHTML = clicks + " " + "aliens";
+//}else }
+
+
+const buy = document.getElementById('multiplier');
+console.log(buy);
+let multiple = false;
+//console.log(multiple);
+
+buy.addEventListener('click', multiple = true);
+
+
+
+
 
 const items = document.querySelectorAll('.boxImg');
 const nbSlide = items.length;
@@ -66,4 +97,9 @@ function previousSlide() {
 
 }
 previous.addEventListener('click', previousSlide)
+
+
+
+
+
 
