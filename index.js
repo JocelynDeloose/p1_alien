@@ -1,14 +1,3 @@
-const alien = document.querySelector("#alien");
-let nombreClics = 0;
-
-function clic(nombreClics) {
-  nombreClics++;
-}
-
-alien.onclick = function (nombreClics) {
-  nombreClics.innerHTML = compteur++;
-};
-
 const dialog = document.getElementById("dialog");
 const openBtn = document.getElementById("openBtn");
 const closeBtn = document.getElementById("closeBtn");
@@ -33,3 +22,49 @@ function closeNav() {
 
   document.getElementById("fleche").style.display = "block";
 }
+
+let clicks = 0;
+function increment() {
+  clicks = clicks + 1;
+  nombreClics.innerHTML = clicks + " " + "aliens";
+}
+
+/*  boutique x2 click
+let doubleClick = 0;
+function incrementDoubleClic() {
+  doubleClick = clicks++;} */
+
+const items = document.querySelectorAll(".boxImg");
+const nbSlide = items.length;
+const next = document.querySelector(".right");
+const previous = document.querySelector(".left");
+
+let count = 0;
+
+function nextSlide() {
+  items[count].classList.remove("active");
+
+  if (count < nbSlide - 1) {
+    count++;
+  } else {
+    count = 0;
+  }
+
+  items[count].classList.add("active");
+  console.log(count);
+}
+next.addEventListener("click", nextSlide);
+
+function previousSlide() {
+  items[count].classList.remove("active");
+
+  if (count > 0) {
+    count--;
+  } else {
+    count = nbSlide - 1;
+  }
+
+  items[count].classList.add("active");
+  console.log(count);
+}
+previous.addEventListener("click", previousSlide);

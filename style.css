@@ -1,17 +1,27 @@
+* {
+  padding: 0;
+  margin: 0;
+}
 @font-face {
   font-family: "space";
-  src: url("SpaceAge.ttf") format("truetype");
+  src: url(space\ age.ttf) format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
-* {
-  background: url(./assets/5445590.jpg) fixed;
-  background-size: cover;
-  padding: 0;
-  margin: 0;
+#page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 body {
   background: url(./assets/fond.jpg) no-repeat center 100% / cover;
   height: 100vh;
@@ -19,57 +29,56 @@ body {
 }
 
 button {
+  display: flex;
   height: 45px;
   width: 45px;
   border-radius: 3rem;
-  font-size: 250%;
+  font-size: 200%;
   align-items: center;
-}
-
-button:hover {
-  cursor: pointer;
+  margin: 15px;
 }
 
 #openBtn {
+  justify-content: center;
   color: red;
   font-weight: bolder;
-  background: url("assets/earth.avif");
+  background-image: url(assets/earth.avif);
   background-size: cover;
-  position: fixed;
-  margin-top: 170px;
-  margin-left: 20px;
 }
 
 #closeBtn {
   display: flex;
+  justify-content: center;
+  align-items: center;
   border: solid;
-  background: url("assets/mars.avif");
+  background-image: url("assets/mars.avif");
   background-size: cover;
-  margin-left: 250px;
+  box-shadow: 0 0 6px rgba(202, 228, 225, 0.92),
+    0 0 30px rgba(202, 228, 225, 0.34), 0 0 12px rgba(108, 242, 30, 0.52),
+    0 0 21px rgba(48, 242, 30, 0.92), 0 0 34px rgba(30, 242, 111, 0.78),
+    0 0 54px rgba(30, 242, 178, 0.92);
 }
 
 dialog {
-  width: 20%;
-  height: 50%;
-  position: absolute;
-  top: 30px;
-  border-radius: 70px;
-  background: url("assets/background.jpg");
-  margin-left: 100px;
-  margin-top: 250px;
-  font-size: 20px;
-  padding: 15px;
-  text-shadow: 0 0 6px rgba(202, 228, 225, 0.92),
-    0 0 30px rgba(202, 228, 225, 0.34), 0 0 12px rgba(30, 132, 242, 0.52),
-    0 0 21px rgba(30, 132, 242, 0.92), 0 0 34px rgba(30, 132, 242, 0.78),
-    0 0 54px rgba(30, 132, 242, 0.92);
+  width: 32vh;
+  height: 47vh;
+  position: fixed;
+  top: 18vh;
+  border-radius: 3rem;
+  margin-left: 7vh;
+  background-image: url("assets/img/12.png");
+  background-size: cover;
+  box-shadow: 0 0 6px rgba(202, 228, 225, 0.92),
+    0 0 30px rgba(202, 228, 225, 0.34), 0 0 12px rgba(108, 242, 30, 0.52),
+    0 0 21px rgba(48, 242, 30, 0.92), 0 0 34px rgba(30, 242, 111, 0.78),
+    0 0 54px rgba(30, 242, 178, 0.92);
+  padding: 25px;
 }
 
 .button2 {
   background: url("assets/wild.png");
   background-size: cover;
   margin-left: 20px;
-  margin-top: 110px;
 }
 
 h2 {
@@ -92,58 +101,109 @@ p {
     0 0 30px rgba(202, 228, 225, 0.34), 0 0 12px rgba(30, 132, 242, 0.52),
     0 0 21px rgba(30, 132, 242, 0.92), 0 0 34px rgba(30, 132, 242, 0.78),
     0 0 54px rgba(30, 132, 242, 0.92);
-  margin: auto;
 }
-/* #container {
-  display: flex;
-} */
+
 @media screen and (max-width: 550px) {
   #titre {
-    font-size: 50px;
+    font-size: 40px;
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
-  #alien {
-    max-height: 280px;
+  img#alien {
+    max-height: 273px;
+  }
+  #fleche {
+    display: none;
+  }
+  #mySidepanel {
+    display: none;
+  }
+  dialog {
+    width: auto;
+    margin-right: 3vh;
+    margin-left: 3vh;
+    height: 55vh;
+  }
+  #compteur {
+    width: 42%;
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 65px;
+  }
+}
+@media screen and (min-width: 560px) {
+  header {
+    position: fixed;
+    flex-direction: column;
+    margin-top: 75vh;
+  }
+  #page .boutique {
+    display: none;
   }
 }
 
 #alien {
-  display: block;
-  height: 400px;
+  display: flex;
+  height: 500px;
   margin: auto;
+  margin-bottom: 0px;
+  margin-top: 0px;
 }
-
+#nombreClics {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  color: aqua;
+  text-shadow: 0 0 6px rgba(0, 255, 225, 0.92),
+    0 0 30px rgba(36, 255, 240, 0.34), 0 0 12px rgba(30, 132, 242, 0.52),
+    0 0 21px rgba(30, 132, 242, 0.92), 0 0 34px rgba(30, 132, 242, 0.78),
+    0 0 54px rgba(30, 132, 242, 0.92);
+}
+#counter {
+  display: flex;
+  justify-content: space-around;
+  align-self: center;
+  border: white;
+  height: 40px;
+  border-radius: 3rem;
+  color: white;
+  font-weight: bolder;
+  width: 40%;
+  box-shadow: 0 0 6px rgba(202, 228, 225, 0.92),
+    0 0 30px rgba(202, 228, 225, 0.34), 0 0 12px rgba(242, 30, 231, 0.52),
+    0 0 21px rgba(224, 30, 242, 0.92), 0 0 34px rgba(242, 30, 207, 0.78),
+    0 0 54px rgba(242, 30, 147, 0.92);
+}
 #footer {
   background-color: black;
   position: absolute;
+  height: fit-content;
   width: 100%;
   bottom: 0;
 }
-
+#wild {
+  font-style: italic;
+  font-size: 8px;
+}
 .prenom {
   color: white;
-  display: flex;
-  justify-content: space-between;
-  list-style-type: none;
-  width: 100%;
+  font-size: 12px;
+  text-align: center;
+  margin: 7px;
 }
 
-.wild {
-  margin-left: 10px;
-}
-
-.anthony {
-  margin-right: 10px;
-}
 /* side bar */
 .sidepanel {
   white-space: nowrap;
   height: 350px; /* Specify a height */
   width: 0; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
-  margin-top: 20px;
+  margin-top: 115px;
   right: 0;
   overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 60px; /* Place content 60px from the top */
+  padding-top: 70px; /* Place content 60px from the top */
   transition: 2s; /* 0.5 second transition effect to slide in the sidepanel */
 }
 
@@ -159,13 +219,21 @@ p {
 
 /* When you mouse over the navigation links, change their color */
 .sidepanel .achat:hover {
-  color: #42fb14;
-  outline: 4px ridge rgb(139, 182, 75);
+  color: #f21ecfc7;
+  outline: 1px ridge #f21ecfc7;
   border-radius: 20px;
-  background-color: #3f32a08f;
+  background-color: #3f32a000;
   margin: 5px;
   padding: 5px;
   margin-top: 20px;
+  box-shadow: 0 0 6px rgba(202, 228, 225, 0.92),
+    0 0 30px rgba(202, 228, 225, 0.34), 0 0 12px rgba(242, 30, 231, 0.52),
+    0 0 21px rgba(30, 242, 48, 0.92), 0 0 34px #f21ecfc7,
+    0 0 54px rgba(242, 30, 147, 0.92);
+  text-shadow: 0 0 6px rgba(202, 228, 225, 0.92),
+    0 0 30px rgba(202, 228, 225, 0.34), 0 0 12px rgba(242, 30, 231, 0.52),
+    0 0 21px rgba(224, 30, 242, 0.92), 0 0 34px #f21ecfc7,
+    0 0 54px rgba(242, 30, 147, 0.92);
 }
 
 /* Position and style the close button (top right corner) */
@@ -181,28 +249,50 @@ p {
 /* Style the button that is used to open the sidepanel */
 .opennav {
   cursor: pointer;
-  color: white;
+  color: #f21ecfc7;
   padding: 10px 15px;
   border: none;
+  text-shadow: 0 0 6px rgba(202, 228, 225, 0.92),
+    0 0 30px rgba(202, 228, 225, 0.34), 0 0 12px rgba(242, 30, 231, 0.52),
+    0 0 21px rgba(224, 30, 242, 0.92), 0 0 34px #f21ecfc7,
+    0 0 54px rgba(242, 30, 147, 0.92);
 }
 
 #fleche {
   width: 25px;
   height: 30px;
-  margin-top: 30vh;
+  margin-top: 45vh;
   right: 0;
   position: fixed; /* Stay in place */
 }
-
-.achat {
+/* carroussel */
+.boutique {
+  display: flex;
+  margin-top: 13px;
+  align-items: center;
 }
-/* .achat {
-  outline: 4px ridge rgb(139, 182, 75);
-  border-radius: 5px;
-  background-color: #3f32a08f;
-  margin: 5px;
-  padding: 5px;
-  margin-top: 20px;
-} */
+#flechegauche {
+  height: 30px;
+}
+#flechedroite {
+  height: 30px;
+  transform: rotate(180deg);
+}
+.boxImg {
+  display: none;
+  width: 90%;
+  /* border: 2px solid black; */
+}
 
-/* snzkdnizjdijdozdko */
+.boxImg.active {
+  display: block;
+  width: 90%;
+  height: 130px;
+  border-radius: 2rem;
+}
+
+.left,
+.right {
+  margin-right: 3%;
+  margin-left: 3%;
+}
